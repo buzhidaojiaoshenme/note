@@ -1,0 +1,2 @@
+#显示配置(自定义配置)覆盖自动配置
+#springboot会把自动把驼峰规则的属性和使用连字符或者下划线的同名属性关联起来,amazon.associateId和amazon.associate_id/amazon.associate-id是等价的

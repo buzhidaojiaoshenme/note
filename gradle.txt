@@ -1,0 +1,9 @@
+#依赖冲突的时候解决方案: maven的解决方案是:最短路径和优先声明, gradle是选择版本最高的
+#mavenLocal()使用本地的maven仓库,默认是C:\Users\Administrator\.m2\repository,  maven { url "http://maven.aliyun.com/nexus/content/groups/public" }是使用私服, mavenCentral()使用远程的maven中央仓库
+#C:\Users\Administrator\.gradle\caches\modules-2\files-2.1是下载下来的jar包缓存的目录,如果缓存中找不到,会重新去本地仓库或私服或中央仓库中去下载
+#Gradle Wrapper的作用是简化Gradle本身的安装、部署,不同版本的项目可能需要不同版本的Gradle,手工部署的话比较麻烦,而且可能产生冲突,所以需要Gradle Wrapper帮你搞定这些事情,Gradle Wrapper是Gradle项目的一部分
+#gradlew.bat是bat脚本,在windows环境中执行,gradlew是shell脚本,在linux环境中执行
+#电脑中不安装gradle也行, idea中创建项目的时候自带gradlew, 它会自动下载相应版本的gradle到用户目录下
+#项目中可以看到一个gradle/wrapper目录,其中有两个文件:gradle-wrapper.jar/gradle-wrapper.properties,gradle-wrapper.jar是Gradle Wrapper的主体功能包,
+#在Android Studio安装过程中产生gradle-wrapper.jar(如果默认安装的话会在C:\Program Files\Android\Android Studio\plugins\android\lib\templates\gradle\wrapper\gradle\wrapper\gradle-wrapper.jar),
+#然后每次新建项目,会将gradle-wrapper.jar拷贝到你的项目的gradle/wrapper目录中,gradle-wrapper.properties文件主要指定了该项目需要什么版本的Gradle,从哪里下载该版本的Gradle

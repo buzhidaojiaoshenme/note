@@ -1,0 +1,4 @@
+#认证和授权(访问控制)
+#没有登录的情况下(请求头或者参数中没有带token),返回401,unauthorized,Full authentication is required to access this resource
+#携带错误token(包含token过期)的情况,返回401,unauthorized,invalid_token,Invalid access token: 13adb70f-99e5-4b95-916b-b88533e5d8db
+#token没有相应权限的情况,403,forbidden,access_denied,Access is denied

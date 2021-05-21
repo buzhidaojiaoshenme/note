@@ -1,0 +1,3 @@
+#npm init 和 npx 的执行基本是一致的
+#执行 npm init vite-app 时，npm 会补全模块名为 create-vite-app 并执行 npx create-vite-app
+#通过vite初始化vue项目的简化过程: npm install -g create-vite-app,create-vite-app projectName => npx create-vite-app projectName => npm init vit-app projectName

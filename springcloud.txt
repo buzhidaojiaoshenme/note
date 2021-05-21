@@ -1,3 +1,8 @@
 #feign的调用分两层,既ribbon调用和hystrix调用
 #feign与zuul中已经默认集成了ribbon
 # FeignClient中,name/value属性的作用是一样的,指定的是调用服务的微服务名称,url指定调用服务的全路径,如果同时指定name和url属性,则以url属性为准,name属性指定的值便当做客户端的名称
+#feign的调用分两层,既ribbon调用和hystrix调用
+#feign与zuul中已经默认集成了ribbon
+# FeignClient中,name/value属性的作用是一样的,指定的是调用服务的微服务名称,url指定调用服务的全路径,如果同时指定name和url属性,则以url属性为准,name属性指定的值便当做客户端的名称
+#应用程序通过 inputs 或者 outputs 来与 Spring Cloud Stream 中Binder 交互，通过我们配置来绑定，而 Spring Cloud Stream 的 Binder 负责与中间件交互。所以，我们只需要搞清楚如何与 Spring Cloud Stream 交互就可以方便使用消息驱动的方式
+#Spring Cloud Stream中的destinations对应(Kafka 的topic，RabbitMQ的 exchanges)

@@ -1,2 +1,14 @@
 #显示配置(自定义配置)覆盖自动配置
 #springboot会把自动把驼峰规则的属性和使用连字符或者下划线的同名属性关联起来,amazon.associateId和amazon.associate_id/amazon.associate-id是等价的
+#显示配置(自定义配置)覆盖自动配置
+#springboot会把自动把驼峰规则的属性和使用连字符或者下划线的同名属性关联起来,amazon.associateId和amazon.associate_id/amazon.associate-id是等价的
+#@Import注解是用来导入配置类或者一些需要前置加载的类
+@Import支持 三种方式
+1.带有@Configuration的配置类(4.2 版本之前只可以导入配置类，4.2版本之后 也可以导入 普通类)
+2.ImportSelector 的实现
+3.ImportBeanDefinitionRegistrar 的实现
+#@EnableConfigurationProperties和@Component注解都是将@ConfigurationProperties注解修饰的类注入到ioc容器当中
+#前端传参为status=1&status=2时,后端可以使用@RequestParam("status")List<String> status 接收参数,注解@RequestParam是必须加的
+#前端传参为status=1,3时,后端可以使用@RequestParam("status")List<String> status 接收参数,注解@RequestParam是必须加的
+#前端传参为status=1&status=2时,后端可以使用String[] status 接收参数,注解@RequestParam非必须
+#前端传参为status=1,3时,后端可以使用String[] status 接收参数,注解@RequestParam非必须
